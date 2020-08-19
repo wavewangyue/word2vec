@@ -1,4 +1,4 @@
-from gensim.models import Word2Vec
+import gensim
 
 model = gensim.models.KeyedVectors.load_word2vec_format('yelp.vector.bin', binary=True)
 print model['hotel']
